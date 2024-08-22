@@ -26,6 +26,7 @@ class TodoBook:
         self.todos: dict[int, Todo] = {}
 
     def add_todo(self, title: str, description: str) -> int:
-        nuevo_id = len(self.todos)+1
-        Todo =
+        nuevo_id = int(len(self.todos)+1)
+        todo_1= Todo(nuevo_id, title, description)
+        self.todos [nuevo_id]= todo_1
         return nuevo_id
