@@ -12,14 +12,18 @@ class Todo:
     def mark_completed(self):
         self.completed = True
 
-    def add_tag(self,tag: str):
-        if tag not in  self.tags:
+    def add_tag(self, tag: str):
+        if tag not in self.tags:
             self.tags.append(tag)
-    def __str__(self)->str:
-        return "code_id - title"
+
+    def __str__(self) -> str:
+        return f" el código es:({self.code_id} y el titulo es: {self.title}"
 
 
 class TodoBook:
 
+    def __int__(self, todos):
+        self.todos: dict[int, Todo] = {}
 
-
+    def add_todo(self, title: str, description: str) -> int:
+        return
